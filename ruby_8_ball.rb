@@ -3,12 +3,12 @@ require "colorize"
 
 def menu 
     puts "Welcome to Magic 8 Ball".colorize(:blue)
-    puts "type Quit to exit".colorize(:blue)
     puts "What question would you like to ask?".colorize(:blue)
-    puts "1: Get answer".colorize(:green)
-    puts "2: Quit".colorize(:red)
     print ">"
     gets.chomp
+    puts "type Quit to exit".colorize(:blue)
+    puts "1: Get answer".colorize(:green)
+    puts "2: Quit".colorize(:red)
     case answer = gets.to_i 
     when 1 
         puts @random_answers.sample  
